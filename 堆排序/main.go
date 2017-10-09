@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	heap = []int{100, 16, 4, 8, 70, 2, 36, 22, 5, 12}
+	heap = []int{99, 16, 4, 67, 21, 34}
 )
 
 func main() {
@@ -20,19 +20,19 @@ func main() {
 	fmt.Println("\n构建树后:")
 	Print(heap)
 
-	fmt.Println("\n增加 90,30,1 :")
-	Push(90)
-	Push(30)
-	Push(1)
-	Print(heap)
+	// fmt.Println("\n增加 90,30,1 :")
+	// Push(90)
+	// Push(30)
+	// Push(1)
+	// Print(heap)
 
-	n := Pop()
-	fmt.Println("\nPop出最小值(", n, ")后:")
-	Print(heap)
+	// n := Pop()
+	// fmt.Println("\nPop出最小值(", n, ")后:")
+	// Print(heap)
 
-	fmt.Println("\nRemove()掉idx为3即值", heap[3-1], "后:")
-	Remove(3)
-	Print(heap)
+	// fmt.Println("\nRemove()掉idx为3即值", heap[3-1], "后:")
+	// Remove(3)
+	// Print(heap)
 
 	fmt.Println("\nHeapSort()后:")
 	HeapSort()
